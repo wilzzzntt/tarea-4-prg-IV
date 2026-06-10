@@ -1,0 +1,66 @@
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+body {
+    background-color: #0f172a; /* Fondo oscuro moderno */
+    color: #f8fafc;
+    font-family: 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    line-height: 1.6;
+}
+
+header {
+    background: rgba(15, 23, 42, 0.8);
+    backdrop-filter: blur(10px); /* Efecto cristal */
+    position: fixed;
+    width: 100%;
+    padding: 1.5rem 0;
+    z-index: 1000;
+}
+
+nav {
+    max-width: 1100px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+}
+
+.logo { font-weight: bold; font-size: 1.4rem; letter-spacing: 1px; }
+nav ul { display: flex; list-style: none; }
+nav a { color: #cbd5e1; text-decoration: none; margin-left: 2rem; transition: 0.3s; }
+nav a:hover { color: #38bdf8; }
+
+.hero {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.hero h1 { font-size: 4rem; margin-bottom: 0.5rem; background: linear-gradient(to right, #38bdf8, #818cf8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+.subtitle { font-size: 1.2rem; color: #94a3b8; }
+
+.skills, .proyectos { padding: 5rem 2rem; max-width: 1100px; margin: 0 auto; }
+h2 { text-align: center; margin-bottom: 3rem; font-size: 2rem; }
+
+.tarjetas-container { display: flex; gap: 2rem; justify-content: center; flex-wrap: wrap; }
+
+.tarjeta {
+    width: 300px;
+    padding: 2.5rem;
+    background: rgba(30, 41, 59, 0.5);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 20px;
+    text-align: center;
+    transition: 0.4s;
+}
+
+.tarjeta:hover {
+    transform: translateY(-10px);
+    border-color: #38bdf8;
+    background: rgba(30, 41, 59, 0.8);
+}
+
+footer { padding: 4rem 2rem; text-align: center; border-top: 1px solid #1e293b; }
+footer a { color: #38bdf8; text-decoration: none; }
